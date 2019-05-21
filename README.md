@@ -1,5 +1,20 @@
 ## Android Test Orchestrator bug
 
+### Update: 
+Switching from 
+
+`androidTestImplementation 'com.android.support.test:orchestrator:1.0.2'`
+
+to
+
+`androidTestUtil 'com.android.support.test:orchestrator:1.0.2'`
+
+solved the problem. This is even how it is described in the docs. :man_facepalming:
+
+
+----------------
+
+
 1. create brand new A/S project
 2. see that AGP is set to 'com.android.tools.build:gradle:3.4.0-beta05'
 3. add Android Test Orchestrator to project (not the AndroidX version)
